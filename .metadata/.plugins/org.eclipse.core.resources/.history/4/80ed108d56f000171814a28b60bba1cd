@@ -1,0 +1,31 @@
+package Test;
+
+import java.util.Scanner;
+
+public class Question5 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a string");
+		String st=sc.nextLine();
+		char ch[]=st.toCharArray();
+		String s="";
+		for(int i=0;i<ch.length;i++)
+		{
+			for(int j=1;j<ch.length;j++)
+			{
+				if(ch[i]!=ch[j])
+				{
+					s=s+ch[i];
+				}
+				else
+				{
+					i++;
+				}
+			}
+		}
+		System.out.println(s);
+
+	}
+
+}
